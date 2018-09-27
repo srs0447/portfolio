@@ -136,13 +136,16 @@ footer{
     
 }
 .education-header{
-    padding: 1em;
+    padding: 1.5em;
+    font-size: 1.6em;
+    text-align: center;
 }
 .all-proj{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px 0;
+
 }
 .programming-skill p{
     padding: 10px;
@@ -209,6 +212,8 @@ footer{
     }
 
 }
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -217,7 +222,9 @@ footer{
   }
 }
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+      position: relative;
+    }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
