@@ -4,9 +4,7 @@
     
 }
 body{
-    background: rgba(0, 0, 0, 0.9);
     margin: 0;
-    color: #ffffff;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 .main_wraper{
@@ -15,14 +13,14 @@ body{
     height: 100%;
 }
 .header{
-    border-bottom: rgb(0, 0, 0) solid 1px;
     padding: 1em;
+    background-color: #dcbc84cc;
 }
 
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #832b2b;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,7 +34,6 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-top: rgb(0, 0, 0) solid 1px;
     padding: 4rem 0rem;
     margin: auto;
 
@@ -52,16 +49,16 @@ body{
   
 }
 .title .image img{
-    width: 100%;
-    height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     opacity: 0.8;
-    margin-left: 20px;
+    margin-left: 150px;
     padding: 10% 0;
-      border-radius: 110%;
+    border-radius: 110%;
 }
 .title .welcome-text{
     margin-top: 10%;
-    color: bisque;
+    color: rgb(20, 51, 189);
     font-size: 3em;
     padding: 1em;
 }
@@ -95,6 +92,7 @@ body{
     color: #ff5622;
 }
 footer{
+   background-color: #dcbc84cc;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1em;
@@ -103,6 +101,7 @@ footer{
     font-size: 2em;
 }
 .copyrights{
+    background-color: #dcbc84cc;
     padding: 2em 1em;
     font-size: 1em;
 }
@@ -118,15 +117,12 @@ footer{
 }
 .all-edu{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 20px 0;
 }
 .all-edu div{
     padding: 0 1em;
-}
-.all-edu div h2{
-   
 }
 .proj{
     display: block;
@@ -147,8 +143,28 @@ footer{
     padding: 20px 0;
 
 }
+
+.technical-detail h2{
+    padding: 25px;
+    text-align: center;
+    color:#444;
+    font-size: 40px;
+}
+.programming-skill{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+     
+}
+.programming-skill div{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.programming-skill div:hover{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
 .programming-skill p{
-    padding: 10px;
+    padding: 15px;
 }
 .all-proj div{
     padding: 0 1em;
@@ -161,8 +177,37 @@ footer{
     
 }
 .education-header{
+    text-align: left;
     padding: 1em;
 }
+.education-detail{
+    display: block;
+    padding: 20px;
+}
+.rows{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+
+}
+.rows .ql{
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.techs{
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.techs h2{
+    font-size: 25px;
+    color:#444;
+    padding: 15px;
+}
+.techs div{
+    padding: 10px;
+  
+}
+
 .cont-proj{
     display: grid;
     grid-template-columns: 1fr;
@@ -178,24 +223,41 @@ footer{
 .all-cont div p{
     padding: 1em 1em;
 }
+.about-me .text-info{
+        padding: 12px 15px;
+}
 
 
-
+@media(max-width:800px){
+    .title .image img{
+        max-width: 250px;
+        height: auto;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .title .welcome-text{
+        margin-top: 10px;
+        font-size: 2em;
+    }
+}
 
 @media(max-width:600px){
     .title{
         display: block;
+        text-align: center;
     }
-    .title .image img{
-        width: 250px;
-        height: auto;
-        margin-right: 0;
-        margin-left: 20px;
+    .title .image .centerImg{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
 
     }
     .title .welcome-text{
-        font-size: 2em;
-        padding: 1em;
+        margin-top: 10px;
+        font-size: 1.5em;
     }
     
     .links{
@@ -203,9 +265,20 @@ footer{
 
 
     }
+
     .links div{
         border-bottom: rgb(31, 29, 29) dashed 1px;
         padding: 1.2rem;
+    }
+    .all-edu{
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .about-me .text-info{
+        padding: 12px 15px;
+        text-align: left;
+        line-height: 25px;
     }
     footer{
         grid-template-columns: 1fr;
