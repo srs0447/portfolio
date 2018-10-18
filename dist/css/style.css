@@ -106,23 +106,22 @@ footer{
     font-size: 1em;
 }
 .edu{
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin:auto;
-    
-}
-.education-header{
-    padding: 1em;
-}
-.all-edu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px 0;
+    grid-gap: 30px;
+    
 }
-.all-edu div{
-    padding: 0 1em;
+
+@media(max-width:600px){
+    .edu{
+        display: block;
+    }
+}
+.all-edu .edu-header{
+     padding: 25px;
+    text-align: center;
+    color:#444;
+    font-size: 30px;
 }
 .proj{
     display: block;
@@ -131,30 +130,61 @@ footer{
     margin:auto;
     
 }
-.education-header{
-    padding: 1.5em;
-    font-size: 1.6em;
-    text-align: center;
-}
+
 .all-proj{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    padding: 20px 0;
 
 }
+.all-proj div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+}
+.all-proj div h2{
+   padding: 25px;
+   font-size: 30px;
+   color: #444;
+   text-align: center;
+
+}
+.all-proj div p{
+   padding: 10px;
+   margin-left: 10px;
+   font-size: 20px;
+   line-height: 30px;
+   color: #444;
+   text-align: left;
+   
+}
+
+
+
 
 .technical-detail h2{
     padding: 25px;
     text-align: center;
     color:#444;
-    font-size: 40px;
+    font-size: 30px;
 }
 .programming-skill{
     display: grid;
+    margin-right: 15px;
     grid-template-columns: auto auto auto;
     grid-gap: 30px;
      
+}
+@media (max-width:600px){
+    .programming-skill{
+        display: grid;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+
+        grid-template-columns: auto auto;
+         grid-gap: 20px;
+    }
+    
 }
 .programming-skill div{
     text-align: center;
@@ -169,33 +199,59 @@ footer{
 .all-proj div{
     padding: 0 1em;
 }
-.cont{
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin:auto;
-    
-}
 .education-header{
     text-align: left;
     padding: 1em;
+}
+.contact-header{
+     padding: 25px;
+    text-align: center;
+    color:#444;
+    font-size: 25px;
+}
+.proj-header{
+     padding: 10px;
+     text-align: center;
+    color:#444;
+    font-size: 20px;
 }
 .education-detail{
     display: block;
     padding: 20px;
 }
-.rows{
-    display: grid;
+ .rows{
+     margin-left: 15px;
+     display: grid;
+     font-weight: 400;
     grid-template-columns: auto auto;
     grid-gap: 20px;
-
+   
 }
-.rows .ql{
-    padding: 25px;
+.rows div{
+     padding: 25px;
+     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.rows div h2{
+     padding: 10px;
+     text-align: center;
+    color:#444;
+    font-size: 20px;
+}
+.rows div p{
+    line-height: 25px;
+}
+@media(max-width:600px){
+    .rows{
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 .techs{
-    margin-top: 20px;
+    margin: 15px;
+    padding: 15px;
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .techs h2{
@@ -208,23 +264,46 @@ footer{
   
 }
 
-.cont-proj{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    padding: 20px 0;
-}
 .programming-skill p{
     padding: 10px;
 }
+.all-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 .all-cont div{
-    padding: 0 1em;
+    text-align: center;
+}
+.all-cont div h2{
+    padding: 10px;
 }
 .all-cont div p{
-    padding: 1em 1em;
+    padding: 10px;
+    line-height: 20px;
+
 }
-.about-me .text-info{
-        padding: 12px 15px;
+.about-me{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+}
+.about-me div{
+    padding: 25px;
+    margin: 15px;
+    text-align: left;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.about-me div h2{
+    color: #444;
+    padding: 25px;
+    font-size: 30px;
+}
+.about-me div p{
+   
+    font-size: 20px;
+    line-height: 30px;
 }
 
 
@@ -270,15 +349,22 @@ footer{
         border-bottom: rgb(31, 29, 29) dashed 1px;
         padding: 1.2rem;
     }
-    .all-edu{
+    .all-cont{
         display: block;
-        text-align: center;
-        line-height: 40px;
+
+
     }
-    .about-me .text-info{
-        padding: 12px 15px;
-        text-align: left;
-        line-height: 25px;
+
+    .all-cont div{
+        border-bottom: rgb(31, 29, 29) dashed 1px;
+        padding: 1.2rem;
+    }
+    .about-me{
+
+        display: block;
+    }
+    .all-proj{
+        display: block;
     }
     footer{
         grid-template-columns: 1fr;
