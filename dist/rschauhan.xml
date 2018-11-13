@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://rschauhan.in/</loc>
+  <lastmod>2018-10-18T16:01:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://rschauhan.in/index.html</loc>
+  <lastmod>2018-10-18T16:01:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rschauhan.in/include/qualification.html</loc>
+  <lastmod>2018-10-18T16:01:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rschauhan.in/include/project.html</loc>
+  <lastmod>2018-10-18T16:01:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rschauhan.in/include/contact.html</loc>
+  <lastmod>2018-10-18T16:01:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://rschauhan.in/include/about.html</loc>
+  <lastmod>2018-10-18T16:01:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
