@@ -77,7 +77,7 @@ body {
   margin: auto;
 }
 .bg-light {
-  background: #77efcecc;
+  background: #f0f1f029;
   color: #333;
 }
 .bg-dark {
@@ -187,6 +187,7 @@ footer {
 }
 .all-proj div {
   padding: 0 1em;
+  border-radius: 20px;
 }
 .education-header {
   text-align: left;
@@ -281,6 +282,7 @@ footer {
 }
 .about-me div {
   padding: 25px;
+  border-radius: 20px;
   margin: 15px;
   text-align: left;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
